@@ -1,1 +1,25 @@
-My first java program.
+How java changed internet?
+--------------------------
+
+1. Java applets
+	Java help us to create a program called applet online, and believe me I do not know anything about it.
+2. Security
+	If you are downloading something from internet, you are at risk. It can be a virus also. Such risks are prevented by java by confining an applet to the java execution environment.
+3. Portability
+	Have you ever run a C program in linux after running it on windows? You need to first compile it on windows and then run it. Does it sound non-portability. Such portability is ensured in java. 
+
+
+Bytecode : Magic of Java
+------------------------
+
+What is bytecode?
+
+	Have you ever compiled any C program? The output of a C compiler is and executable file. It does not happen in case of Java. The Java compiler compiles a program to its 
+	bytecode, which is executed by Java Virtual Machine. If you will compile any java program, you will get a file with .class extension. This is the bytecode of the file.
+
+	The bytecode helps in following aspects:
+
+	1. It makes Java programs portable. You can use JVM and run it.
+	2. It makes Java programs secure.
+
+	And do not be worry about Bytecode contents. Just remember, bytecode is input for JVM and output of Java compilers.
