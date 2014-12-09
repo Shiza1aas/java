@@ -23,3 +23,17 @@ What is bytecode?
 	2. It makes Java programs secure.
 
 	And do not be worry about Bytecode contents. Just remember, bytecode is input for JVM and output of Java compilers.
+
+Java Servelets
+--------------
+These are those programs which run server side in Java and believe me I don't know more than it.
+
+Some terms related to Java
+--------------------------
+
+1. Object oriented : Java is object oriented. Do you know what does it mean. If you don't, let me clarify you.
+		Give me a name of an object. Car, ok. Car is an object which helps you in travelling. Now car has some properties, e.g. color, model etc. Also some operations, e.g. start, brake, accelerate. When you use it, you don't worry about how all these operations work, you simply use breaks. 
+			The same analogy can be used in case of Objects 
+		in programming languages. For example,if you want to make a program, you will make an object. It will have characteristics and methods.
+
+2. Multithreaded : Java allows us to use multiple threads at the same time. It means you can perform multiple tasks at the same time. 
