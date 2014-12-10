@@ -1,0 +1,20 @@
+All computer program consists of two elements:
+1. Code
+2. Data
+
+Some programs are written around code, i.e., "what is happening" while some others are written around data, i.e., "who is being affected". 
+The first approach is called process-oriented approach, while the other is called object oriented approach.
+
+
+The OOP principles:
+
+1. Abstraction: Whenever we use a car, we do not worry how the internal parts work together. This is called to be abstraction. 
+
+2. Encapsulation: Keeping data and code safe from outside interference is called to be encapsulation. 
+
+3. Inheritence: Have you inherited anything from your ancestors. Inheritence is the property by which one process acquires the property of another.
+
+4. Polymorphism: The feature which allows one interface to be used in various way.
+
+
+In Java, Polymorphism, Encapsulation, and inheritence work together. 
