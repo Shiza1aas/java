@@ -85,6 +85,28 @@ this keyword:
 
 this is used to invoke the current object.
 
+Argument passing:
+
+Primitive types are passed by value.
+Objects are passed by reference.
+
+
+
+static variables are same for each object.
+
+static methods:
+
+1. These can directly call only static methods.
+2. These can directly access only static variables.
+3. No this or super in the case of static methods.
+
+To call static methods from outside world, you need to use
+
+classname.method();
+
+
+
+
 
 
 
