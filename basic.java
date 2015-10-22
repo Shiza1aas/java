@@ -106,6 +106,153 @@ classname.method();
 
 
 
+// Interfaces onwards
+
+An abstract type, which defines what Interfaces one class has to implement.
+
+methods are declared without body.
+
+These are rather implemented.
+
+The implementations can be accessed via interface references just the way subclasses were referenced using 
+superclasses.
+
+variables in interfaces:
+
+We can have variables in interfaces too. These are simply act as final variables.
+
+one interface can inherit another.
+
+
+Default interface methods:
+
+default String getString()
+{
+	// body
+}
+
+The above method is a default method. It has been added in JDK 8, so that one can add his own implementation
+to the interfaces.
+
+In case of default interface methods, there is an issue of multiple inheritance. Let us consider an example:
+
+interface A
+{
+	void hello();
+
+	default void eat()
+	{
+		// A's default eat
+	}
+}
+
+
+interface B
+{
+	void hello();
+
+	default void eat()
+	{
+		// A's default eat
+	}
+}
+
+class C implements A,B {
+	public void hello()
+	{
+		// hello
+	}
+
+	// public void eat()
+	// {
+	// 	//  i am in C
+	// }
+}
+
+So, what should C do in this case? Which eat() should it inherit?
+It will through an error.
+
+Let us consider a situation where one interface inherit another:
+
+interface A
+{
+	void hello();
+
+	default void eat()
+	{
+		System.out.println("I am in A's eat.");
+		// A's default eat
+	}
+}
+
+
+interface B extends A
+{
+	void hello();
+
+	default void eat()
+	{
+		System.out.println("I am in B's eat.");
+	}
+}
+
+
+class C implements A,B {
+	public void hello()
+	{
+		// hello
+	}
+
+	// public void eat()
+	// {
+	// 	//  i am in C
+	// }
+}
+
+
+What would happen here? C will use B's eat. If you want to use A's eat, you need to call
+
+Exception handling
+------------------
+
+Exception is something which denotes an exceptional behaviour in you java code.
+
+Java exception handling is managed by following 5 keywords:
+
+1. try
+2. catch
+3. throw : To manually throw an exception, you need to use throw.
+4. throws : To throw an exception by a method, you need to use throws.
+5. finally
+
+
+All exception are subclasses of Throwable class.
+
+						Throwable
+						/       \
+                       /         \
+                    Exception   Error
+                        |
+                        |
+                 Runtime Exception
+
+If you will not handle an exception, the default behaviour will be occured. It will show an error and your 
+program will be terminated.
+
+To stop this, you need to handle the exception by yourself.
+
+
+All exceptions are subclasses of class exception.
+-------------------------------------------------------
+Multithreaded Programming.
+-------------------------
+
+
+
+
+
+
+
 
 
 
