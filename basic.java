@@ -247,8 +247,22 @@ All exceptions are subclasses of class exception.
 Multithreaded Programming.
 -------------------------
 
+Multithreading is special type of multi-tasking.
 
+Multi-tasking can be achieved using two techniques:
 
+1. Process-based.
+	This involve processes. The smallest units are programs here.
+	It deals with the big picture.
+2. Thread-based.
+    This involve threads. The smallest units are threads here.
+    It deals with the small picture.
+
+    The context switching in Processes are expensive. 
+    The context switching in threads are easy. They share the same address and 
+    belong to the same program.
+
+    Multithreading just utilizes idle time of computer.
 
 
 
